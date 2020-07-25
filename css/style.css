@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ccc
+}
+
+.calculator {
+	border: 3px solid rgba(255, 255, 255, .6);
+	border-radius: 10px;
+	padding: 10px 10px 20px;
+	width: 250px;
+}
+
+.screen {
+	width: 100%;
+}
+
+.ac {
+	width: 145px;
+	margin: 15px 1px 15px 16px;
+}
+
+.back {
+	width: 44px;
+}
+
+.display {
+	background-color: white;
+	display: inline-flex;
+	justify-content: flex-end;
+	align-items: center;
+	line-height: 6px;
+	overflow: hidden;
+	height: 40px;
+	padding: 15px;
+	margin: 10px auto 0;
+	width: 100%;
+	border-radius: 5px;
+	font-size: 25px;
+	letter-spacing: 1px;
+}
+
+.buttons-calculator {
+	width: 85%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(4, 30px);
+	grid-template-rows: 35px 35px 35px 35px;
+	gap: 15px 20px;
+}
+
+button {
+	color: white;
+	padding: 5px 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	outline: none;
+}
+
+.ac, .back {
+	background-color: orange;
+	padding: 5px;
+	display: inline-block;
+}
+
+.digit, .comma {
+	background-color: #03b6fc;
+}
+
+.operator, .result {
+	background-color: #f59e11;
+}
+
+.displaySize {
+	font-size: 15px !important;
+}
